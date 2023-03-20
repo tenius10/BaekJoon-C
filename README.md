@@ -1,2 +1,2 @@
-# Baekjoon
+# BaekJoon
 2021~2022년에 C로 풀었던 백준 문제 백업
