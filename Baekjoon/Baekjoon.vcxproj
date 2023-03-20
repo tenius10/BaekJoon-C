@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fe759223-cc2c-43a0-b958-a89798777e41}</ProjectGuid>
+    <RootNamespace>Baekjoon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Baekjoon.c" />
+    <ClCompile Include="Baekjoon10830.c" />
+    <ClCompile Include="Baekjoon1780.c" />
+    <ClCompile Include="Baekjoon10942.c" />
+    <ClCompile Include="Baekjoon11066.c" />
+    <ClCompile Include="Baekjoon2629.c" />
+    <ClCompile Include="Baekjoon12865.c" />
+    <ClCompile Include="Baekjoon4574.c" />
+    <ClCompile Include="Baekjoon15829.c" />
+    <ClCompile Include="Baekjoon.cpp" />
+    <ClCompile Include="Baekjoon16928.cpp" />
+    <ClCompile Include="Baekjoon1707.cpp" />
+    <ClCompile Include="Baekjoon2206.cpp" />
+    <ClCompile Include="Baekjoon24060.c" />
+    <ClCompile Include="Baekjoon1018.c" />
+    <ClCompile Include="Baekjoon10773.c" />
+    <ClCompile Include="Baekjoon10814_1_MergeSort.c" />
+    <ClCompile Include="Baekjoon10814_2_qSortAPI.c" />
+    <ClCompile Include="Baekjoon10814_3_QuickSort.c" />
+    <ClCompile Include="Baekjoon10815.c" />
+    <ClCompile Include="Baekjoon10816.c" />
+    <ClCompile Include="Baekjoon1083.c" />
+    <ClCompile Include="Baekjoon10844.c" />
+    <ClCompile Include="Baekjoon10989_CountingSort.c" />
+    <ClCompile Include="Baekjoon11053.c" />
+    <ClCompile Include="Baekjoon1107.c" />
+    <ClCompile Include="Baekjoon11279.c" />
+    <ClCompile Include="Baekjoon11286.c" />
+    <ClCompile Include="Baekjoon11478.c" />
+    <ClCompile Include="Baekjoon1149.c" />
+    <ClCompile Include="Baekjoon11650.c" />
+    <ClCompile Include="Baekjoon11651.c" />
+    <ClCompile Include="Baekjoon1182_bt.c" />
+    <ClCompile Include="Baekjoon1182_dfs.c" />
+    <ClCompile Include="Baekjoon1269.c" />
+    <ClCompile Include="Baekjoon1436_1.c" />
+    <ClCompile Include="Baekjoon1436_2.c" />
+    <ClCompile Include="Baekjoon14500_1.c" />
+    <ClCompile Include="Baekjoon14500_2.c" />
+    <ClCompile Include="Baekjoon14888.c" />
+    <ClCompile Include="Baekjoon14889.c" />
+    <ClCompile Include="Baekjoon14889_1.c" />
+    <ClCompile Include="Baekjoon14889_2.c" />
+    <ClCompile Include="Baekjoon1520.c" />
+    <ClCompile Include="Baekjoon1541.c" />
+    <ClCompile Include="Baekjoon15652.c" />
+    <ClCompile Include="Baekjoon16139.cpp" />
+    <ClCompile Include="Baekjoon1620.c" />
+    <ClCompile Include="Baekjoon1654.c" />
+    <ClCompile Include="Baekjoon1655.c" />
+    <ClCompile Include="Baekjoon17406.c" />
+    <ClCompile Include="Baekjoon17478.c" />
+    <ClCompile Include="Baekjoon1764.c" />
+    <ClCompile Include="Baekjoon18870.c" />
+    <ClCompile Include="Baekjoon1912.c" />
+    <ClCompile Include="Baekjoon1920.c" />
+    <ClCompile Include="Baekjoon1927.c" />
+    <ClCompile Include="Baekjoon1931.c" />
+    <ClCompile Include="Baekjoon1932.c" />
+    <ClCompile Include="Baekjoon1934.c" />
+    <ClCompile Include="Baekjoon20006.c" />
+    <ClCompile Include="Baekjoon2108.c" />
+    <ClCompile Include="Baekjoon2156_1.c" />
+    <ClCompile Include="Baekjoon2156_2.c" />
+    <ClCompile Include="Baekjoon2178_bfs.c" />
+    <ClCompile Include="Baekjoon2178_dfs.c" />
+    <ClCompile Include="Baekjoon2234.c" />
+    <ClCompile Include="Baekjoon2293.c" />
+    <ClCompile Include="Baekjoon24416.c" />
+    <ClCompile Include="Baekjoon25304.c" />
+    <ClCompile Include="Baekjoon25305.c" />
+    <ClCompile Include="Baekjoon2531.c" />
+    <ClCompile Include="Baekjoon2580.c" />
+    <ClCompile Include="Baekjoon2609.c" />
+    <ClCompile Include="Baekjoon2751_IntervalSort.c" />
+    <ClCompile Include="Baekjoon2751_MergeSort.c" />
+    <ClCompile Include="Baekjoon2981.c" />
+    <ClCompile Include="Baekjoon3020.c" />
+    <ClCompile Include="Baekjoon3020_bs.c" />
+    <ClCompile Include="Baekjoon5086.c" />
+    <ClCompile Include="Baekjoon9012.c" />
+    <ClCompile Include="Baekjoon9184_BottomUp.c" />
+    <ClCompile Include="Baekjoon9184_TopDown.c" />
+    <ClCompile Include="Baekjoon9251.c" />
+    <ClCompile Include="Baekjoon9375.c" />
+    <ClCompile Include="Baekjoon9461.c" />
+    <ClCompile Include="Baekjoon9663_1_N-Queen.c" />
+    <ClCompile Include="Baekjoon9663_2_N-Queen.c" />
+    <ClCompile Include="Baekjoon9663_3_N-Queen.c" />
+    <ClCompile Include="CodeForce1294_1.cpp" />
+    <ClCompile Include="CodeForce1294_2.c" />
+    <ClCompile Include="CodeForce1426.cpp" />
+    <ClCompile Include="ConvertDecimalHexaDecimal.c" />
+    <ClCompile Include="DijkstraShortestPath.c" />
+    <ClCompile Include="Graph_DFS_BFS.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
